@@ -10,6 +10,7 @@ public class Setor {
 	private Date dataAtualizacao;
 	private String criador;
 	private String atualizador;
+	private String idFuncionario; //chave estrangeira de funcionário.
 	private boolean ativo;
 	
 	//getters e setters:
@@ -54,6 +55,12 @@ public class Setor {
 	}
 	public void setAtivo(boolean ativo) {
 		this.ativo = ativo;
+	}
+	public String getIdFuncionario() {
+		return idFuncionario;
+	}
+	public void setIdFuncionario(String idFuncionario) {
+		this.idFuncionario = idFuncionario;
 	}
 	
 	

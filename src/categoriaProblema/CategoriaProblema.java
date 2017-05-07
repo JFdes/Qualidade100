@@ -11,6 +11,10 @@ public class CategoriaProblema {
 	private Date dataAtualizacao;
 	private String atualizador;
 	private boolean ativo;
+	
+	
+	// getters e setters:
+	
 	public long getIdCategoria() {
 		return idCategoria;
 	}
