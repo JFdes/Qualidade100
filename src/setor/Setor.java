@@ -2,13 +2,15 @@ package setor;
 
 import java.sql.Date;
 
+import funcionario.Funcionario;
+
 public class Setor {
 	
 	private long idSetor;
 	private String setor;
 	private Date dataCriacao;
 	private Date dataAtualizacao;
-	private String criador;
+	private Funcionario criador;
 	private String atualizador;
 	private String idFuncionario; //chave estrangeira de funcionário.
 	private boolean ativo;
@@ -38,10 +40,10 @@ public class Setor {
 	public void setDataAtualizacao(Date dataAtualizacao) {
 		this.dataAtualizacao = dataAtualizacao;
 	}
-	public String getCriador() {
+	public Funcionario getCriador() {
 		return criador;
 	}
-	public void setCriador(String criador) {
+	public void setCriador(Funcionario criador) {
 		this.criador = criador;
 	}
 	public String getAtualizador() {

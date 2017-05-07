@@ -2,12 +2,13 @@ package cliente;
 
 import java.sql.Date;
 import cliente.CategoriaCliente;
+import funcionario.Funcionario;
 
 public class Cliente {
 	
 	private long idCliente;
-	private String criador;
-	private String atualizador;
+	private Funcionario criador;
+	private Funcionario atualizador;
 	private Date dataCriacao;
 	private Date dataAtualizacao;
 	private String nomeFantasia;
@@ -16,7 +17,7 @@ public class Cliente {
 	private String inscest;
 	private String email;
 	private String RegimeTributario;
-	private CategoriaCliente categoriaCliente;
+	private CategoriaCliente categoriaCliente; //relacionamento com CategoriaCliente.
 	private String logradouro;
 	private String numero;
 	private String bairro;
@@ -45,16 +46,16 @@ public class Cliente {
 	public void setIdCliente(long idCliente) {
 		this.idCliente = idCliente;
 	}
-	public String getCriador() {
+	public Funcionario getCriador() {
 		return criador;
 	}
-	public void setCriador(String criador) {
+	public void setCriador(Funcionario criador) {
 		this.criador = criador;
 	}
-	public String getAtualizador() {
+	public Funcionario getAtualizador() {
 		return atualizador;
 	}
-	public void setAtualizador(String atualizador) {
+	public void setAtualizador(Funcionario atualizador) {
 		this.atualizador = atualizador;
 	}
 	public Date getDataCriacao() {
