@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Funcionario {
 
-	private int idfuncionario;
+	private long idfuncionario;
 	private String nome;
 	private String usuario;
 	private String senha;
@@ -23,12 +23,12 @@ public class Funcionario {
 	private String uf;
 	private String cep;
 	private String setor;
-	private int idSetor; //chave estrangeira de setor.
-	private boolean status;
+	private long idSetor; //chave estrangeira de setor.
+	private boolean ativo;
 
 	// métodos get e set dos atributos.
 
-	public int getIdfuncionario() {
+	public long getIdfuncionario() {
 		return idfuncionario;
 	}
 
@@ -172,13 +172,6 @@ public class Funcionario {
 		this.setor = setor;
 	}
 
-	public boolean isStatus() {
-		return status;
-	}
-
-	public void setStatus(boolean status) {
-		this.status = status;
-	}
 
 	public Date getDtInclusao() {
 		return dtInclusao;
@@ -188,13 +181,23 @@ public class Funcionario {
 		this.dtInclusao = dtInclusao;
 	}
 
-	public int getIdSetor() {
+	public long getIdSetor() {
 		return idSetor;
 	}
 
 	public void setIdSetor(int idSetor) {
 		this.idSetor = idSetor;
 	}
+
+	public boolean getAtivo() {
+		return ativo;
+	}
+
+	public void setAtivo(boolean ativo) {
+		this.ativo = ativo;
+	}
+
+
 
 	
 }
